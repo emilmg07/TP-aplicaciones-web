@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de fragancias árabes y de diseñador de AMBER CLUB.">
+  <title>Catálogo | AMBER CLUB</title>
+</head>
+<body>
+  <a href="#contenido">Saltar al contenido principal</a>
+  <header>
+    <a href="index.html" aria-label="AMBER CLUB: ir al inicio"><img src="assets/img/logo.svg" alt="AMBER CLUB, perfumería" width="240" height="57"></a>
+    <nav aria-label="Navegación principal"><ul><li><a href="index.html">Inicio</a></li>
+<li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<li><a href="carrito.html">Carrito</a></li></ul></nav>
+  </header>
+  <main id="contenido">
+    <h1>Catálogo de perfumes</h1><p>Explorá nuestra selección de fragancias. Las imágenes son ilustrativas.</p>
+    <section aria-labelledby="busqueda"><h2 id="busqueda">Buscar y filtrar</h2>
+      <form action="catalogo.html" method="get" role="search"><label for="buscar">Nombre de perfume</label> <input id="buscar" name="q" type="search" placeholder="Ej.: Khamrah">
+        <label for="marca">Marca</label> <select id="marca" name="marca"><option value="">Todas</option><option>Lattafa</option><option>Rasasi</option><option>French Avenue</option></select>
+        <label for="familia">Familia olfativa</label> <select id="familia" name="familia"><option value="">Todas</option><option>Oriental</option><option>Fresca</option><option>Amaderada</option></select>
+        <button type="submit">Buscar</button>
+      </form><p><small>Formulario semántico preparado para su funcionamiento dinámico en TP3/TP4. Por ahora, el listado permanece estático.</small></p></section>
+    <section aria-labelledby="resultados"><h2 id="resultados">Productos disponibles para explorar</h2>
+<article><a href="producto.html"><img src="assets/img/khamrah.svg" width="240" height="210" alt="Ilustración del perfume Khamrah de Lattafa"></a><h3>Khamrah</h3><p>Marca: Lattafa. Familia: Oriental especiado.</p><p>Precio: a confirmar.</p><a href="producto.html">Ver detalle de producto</a></article><article><a href="producto.html"><img src="assets/img/hawas.svg" width="240" height="210" alt="Ilustración del perfume Hawas Ice de Rasasi"></a><h3>Hawas Ice</h3><p>Marca: Rasasi. Familia: Fresco acuático.</p><p>Precio: a confirmar.</p><a href="producto.html">Ver detalle de producto</a></article><article><a href="producto.html"><img src="assets/img/asad.svg" width="240" height="210" alt="Ilustración del perfume Asad de Lattafa"></a><h3>Asad</h3><p>Marca: Lattafa. Familia: Amaderado especiado.</p><p>Precio: a confirmar.</p><a href="producto.html">Ver detalle de producto</a></article><article><a href="producto.html"><img src="assets/img/liquid.svg" width="240" height="210" alt="Ilustración del perfume Liquid Brun de French Avenue"></a><h3>Liquid Brun</h3><p>Marca: French Avenue. Familia: Cálido avainillado.</p><p>Precio: a confirmar.</p><a href="producto.html">Ver detalle de producto</a></article>
+    </section>
+  </main>
+  <footer>
+    <p>AMBER CLUB · Córdoba, Argentina</p>
+    <nav aria-label="Navegación del pie de página"><a href="nosotros.html">Quiénes somos</a> · <a href="contacto.html">Contacto</a></nav>
+    <p><small>Proyecto académico de Aplicaciones Web I. Imágenes ilustrativas. Stock y precios no publicados en SP2.</small></p>
+  </footer>
+</body>
+</html>
