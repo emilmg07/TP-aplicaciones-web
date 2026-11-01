@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contactá a AMBER CLUB para consultar sobre perfumes y pedidos.">
+
+    <title>Contacto | AMBER CLUB</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#contenido">
+        Saltar al contenido principal
+    </a>
+
+    <!-- ENCABEZADO -->
+    <header class="site-header">
+
+        <a class="site-logo"
+           href="index.html"
+           aria-label="AMBER CLUB: ir al inicio">
+
+            <img src="assets/img/logo.svg"
+                 alt="AMBER CLUB, perfumería"
+                 width="240"
+                 height="57">
+        </a>
+
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="site-nav__list">
+
+                <li>
+                    <a class="site-nav__link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="catalogo.html">
+                        Catálogo
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="nosotros.html">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="contacto.html"
+                       aria-current="page">
+                        Contacto
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="carrito.html">
+                        Carrito
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="page-shell" id="contenido">
+
+        <h1>Contacto</h1>
+
+        <p>
+            ¿Tenés alguna consulta sobre nuestras fragancias?
+            Completá el formulario para preparar tu mensaje.
+        </p>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="content-section contact-panel"
+                 aria-labelledby="formulario">
+
+            <h2 id="formulario">Formulario de consulta</h2>
+
+            <form id="formulario-contacto" class="form-panel">
+
+                <!-- NOMBRE -->
+                <p>
+                    <label for="nombre">Nombre completo</label>
+
+                    <input
+                        class="form-control"
+                        id="nombre"
+                        name="nombre"
+                        type="text"
+                        autocomplete="name"
+                        minlength="3"
+                        maxlength="80"
+                        required>
+                </p>
+
+                <!-- CORREO -->
+                <p>
+                    <label for="correo">Correo electrónico</label>
+
+                    <input
+                        class="form-control"
+                        id="correo"
+                        name="correo"
+                        type="email"
+                        autocomplete="email"
+                        required>
+                </p>
+
+                <!-- MOTIVO -->
+                <p>
+                    <label for="motivo">Motivo de consulta</label>
+
+                    <select
+                        class="form-control"
+                        id="motivo"
+                        name="motivo"
+                        required>
+
+                        <option value="">Seleccioná una opción</option>
+                        <option value="Productos">Productos</option>
+                        <option value="Pedido">Pedido</option>
+                        <option value="Otro">Otro</option>
+
+                    </select>
+                </p>
+
+                <!-- MENSAJE -->
+                <p>
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea
+                        class="form-control"
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        minlength="10"
+                        maxlength="1000"
+                        placeholder="Escribí tu consulta..."
+                        required></textarea>
+                </p>
+
+                <!-- BOTÓN -->
+                <button class="button button--primary"
+                        type="submit">
+                    Preparar consulta
+                </button>
+
+            </form>
+
+            <!-- RESULTADO DE JAVASCRIPT -->
+            <div id="resultado-contacto"
+                 role="status"
+                 aria-live="polite">
+            </div>
+
+            <p>
+                <small>
+                    Este formulario permite validar y preparar
+                    una consulta. No envía información
+                    automáticamente.
+                </small>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+
+        <p>AMBER CLUB · Córdoba, Argentina</p>
+
+        <nav aria-label="Navegación del pie de página">
+
+            <a href="nosotros.html">Quiénes somos</a>
+            ·
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+        <p>
+            <small>
+                Proyecto académico de Aplicaciones Web I.
+                Precios sujetos a confirmación.
+            </small>
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="js/contacto.js"></script>
+
+</body>
+</html>

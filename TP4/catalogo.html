@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Catálogo de fragancias árabes y de diseñador de AMBER CLUB.">
+
+    <title>Catálogo | AMBER CLUB</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#contenido">
+        Saltar al contenido principal
+    </a>
+
+    <!-- ENCABEZADO -->
+    <header class="site-header">
+
+        <a class="site-logo"
+           href="index.html"
+           aria-label="AMBER CLUB: ir al inicio">
+
+            <img src="assets/img/logo.svg"
+                 alt="AMBER CLUB, perfumería"
+                 width="240"
+                 height="57">
+        </a>
+
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="site-nav__list">
+
+                <li>
+                    <a class="site-nav__link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="catalogo.html"
+                       aria-current="page">
+                        Catálogo
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="nosotros.html">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="carrito.html">
+                        Carrito
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="page-shell" id="contenido">
+
+        <h1>Catálogo de perfumes</h1>
+
+        <p>
+            Explorá nuestra selección de fragancias.
+            Las imágenes son ilustrativas.
+        </p>
+
+        <!-- BUSCADOR Y FILTROS -->
+        <section class="content-section filter-panel"
+                 aria-labelledby="busqueda">
+
+            <h2 id="busqueda">Buscar y filtrar</h2>
+
+            <form class="form-panel"
+                  action="catalogo.html"
+                  method="get"
+                  role="search">
+
+                <!-- BUSCADOR -->
+                <label for="buscar">
+                    Nombre de perfume
+                </label>
+
+                <input class="form-control"
+                       type="search"
+                       id="buscar"
+                       name="q"
+                       placeholder="Ej.: Asad, Bharara King...">
+
+                <!-- FILTRO POR MARCA -->
+                
+                    <!-- FILTRO POR MARCA -->
+                    <label for="marca">Marca</label>
+
+                    <select class="form-control" id="marca" name="marca">
+                        <option value="">Todas las marcas</option>
+                        <option value="Lattafa">Lattafa</option>
+                        <option value="Rasasi">Rasasi</option>
+                        <option value="French Avenue">French Avenue</option>
+                    </select>
+
+
+                <!-- FILTRO POR FAMILIA -->
+                <label for="familia">
+                <label for="familia">Familia olfativa</label>
+
+                    <select class="form-control" id="familia" name="familia">
+                        <option value="">Todas las familias</option>
+                        <option value="Oriental">Oriental</option>
+                        <option value="Fresca">Fresca</option>
+                        <option value="Amaderada">Amaderada</option>
+                    </select>
+
+                <!-- BOTÓN BUSCAR -->
+                <button class="button button--primary"
+                        type="submit">
+                    Buscar
+                </button>
+
+            </form>
+
+            <p>
+                <small>
+                    Explorá nuestras fragancias utilizando
+                    el buscador y los filtros por marca
+                    y familia olfativa.
+                </small>
+            </p>
+
+        </section>
+
+        <!-- CATÁLOGO DINÁMICO -->
+        <section class="content-section"
+                 aria-labelledby="resultados">
+
+            <h2 id="resultados">
+                Nuestros perfumes
+            </h2>
+
+            <div id="contenedor-productos"
+                 class="product-grid">
+
+                <!-- Los perfumes se generan con JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+
+        <p>
+            AMBER CLUB · Córdoba, Argentina
+        </p>
+
+        <nav aria-label="Navegación del pie de página">
+
+            <a href="nosotros.html">
+                Quiénes somos
+            </a>
+
+            ·
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </nav>
+
+        <p>
+            <small>
+                Proyecto académico de Aplicaciones Web I.
+                Imágenes ilustrativas.
+            </small>
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="js/catalogo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Revisá tu selección de perfumes en AMBER CLUB.">
+
+    <title>Carrito de compras | AMBER CLUB</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#contenido">
+        Saltar al contenido principal
+    </a>
+
+    <!-- ENCABEZADO -->
+    <header class="site-header">
+
+        <a class="site-logo"
+           href="index.html"
+           aria-label="AMBER CLUB: ir al inicio">
+
+            <img src="assets/img/logo.svg"
+                 alt="AMBER CLUB, perfumería"
+                 width="240"
+                 height="57">
+        </a>
+
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="site-nav__list">
+
+                <li>
+                    <a class="site-nav__link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="catalogo.html">
+                        Catálogo
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="nosotros.html">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="carrito.html"
+                       aria-current="page">
+                        Carrito
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="page-shell" id="contenido">
+
+        <h1>Tu carrito de compras</h1>
+
+        <p>
+            Revisá tus fragancias seleccionadas.
+            La disponibilidad y los precios se confirman
+            al realizar la consulta.
+        </p>
+
+        <!-- RESUMEN DEL PEDIDO -->
+        <section class="content-section cart-panel"
+                 aria-labelledby="resumen">
+
+            <h2 id="resumen">Resumen del pedido</h2>
+
+            <div style="overflow-x: auto;">
+
+                <table class="data-table">
+
+                    <caption>
+                        Perfumes seleccionados para consultar
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="productos-carrito">
+                        <!-- JavaScript genera las filas -->
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p id="resumen-carrito" aria-live="polite">
+                Cargando carrito...
+            </p>
+
+        </section>
+
+        <!-- CONFIRMACIÓN -->
+        <section class="content-section"
+                 aria-labelledby="confirmacion">
+
+            <h2 id="confirmacion">Confirmar pedido</h2>
+
+            <p>
+                Una vez seleccionados tus perfumes,
+                podés preparar una consulta con el detalle
+                de los productos y sus cantidades.
+            </p>
+
+            <button
+                class="button button--primary"
+                type="button"
+                id="confirmar-pedido">
+                Preparar consulta
+            </button>
+
+            <button
+                class="button"
+                type="button"
+                id="vaciar-carrito">
+                Vaciar carrito
+            </button>
+
+            <div id="mensaje-pedido" aria-live="polite"></div>
+
+            <p>
+                <a class="text-link" href="catalogo.html">
+                    Seguir explorando el catálogo
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+
+        <p>AMBER CLUB · Córdoba, Argentina</p>
+
+        <nav aria-label="Navegación del pie de página">
+            <a href="nosotros.html">Quiénes somos</a>
+            ·
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>
+            <small>
+                Proyecto académico de Aplicaciones Web I.
+                Precios y disponibilidad sujetos a confirmación.
+            </small>
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="js/carrito.js"></script>
+
+</body>
+</html>
